@@ -1,0 +1,11 @@
+language: node_js
+
+node_js: stable
+
+sudo: true
+
+before_install:
+  - git config --global user.name "fydy"
+  - git config --global user.email "barberw@mail.lcc.edu"
+  - npm install 
+  - npm update
