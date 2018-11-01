@@ -8,10 +8,11 @@ sudo: required
 services:
   - docker
 
-cache:
-  directories:
+directories:
     - node_modules
     
 before_install:
-  - docker login --username="$HEROKU_EMAIL" --password="$HEROKU_APIKEY" registry.heroku.com
-  - docker pull registry.heroku.com/"$HEROKU_APPNAME"
+  - git clone -b v1.10.x https://github.com/NodeBB/NodeBB.git
+  - cp -rf config.json NodeBB && cd NodeBB 
+  - node app --setup
+  
