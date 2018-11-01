@@ -5,25 +5,13 @@ node_js:
 
 sudo: required
 
+services:
+  - docker
+
 cache:
   directories:
     - node_modules
     
-script:
-  # Install the Heroku gem (or the Heroku toolbelt)
-  - gem install heroku
-  # Add your Heroku git repo:
-  - git remote add heroku git@heroku.com:bbsnode.git
-  # Add your Heroku API key:
-  - export HEROKU_API_KEY=$heroku auth:token
-  # Turn off warnings about SSH keys:
-  - echo "Host heroku.com" >> ~/.ssh/config
-  - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
-  - echo "   CheckHostIP no" >> ~/.ssh/config
-  - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
-  # Clear your current Heroku SSH keys:
-  - heroku keys:clear
-  # Add a new SSH key to Heroku
-  - yes | heroku keys:add
-  # Push to Heroku!
-  - yes | heroku git:clone -a bbsnode
+before_install:
+  - docker login --username="$HEROKU_EMAIL" --password="$HEROKU_APIKEY" registry.heroku.com
+  - docker clone registry.heroku.com/"$HEROKU_APPNAME"
