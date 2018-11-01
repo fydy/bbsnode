@@ -15,6 +15,7 @@ before_install:
   - npm install winston
   - npm install mkdirp
   - npm install mime
+  - npm install graceful-fs
   
 script: 
   - echo "npm test temporarily disabled"
