@@ -7,5 +7,12 @@ sudo: true
 before_install:
   - git config --global user.name "fydy"
   - git config --global user.email "barberw@mail.lcc.edu"
-  - npm install 
+  - npm install
+
+install:
   - npm update
+  
+after_success:
+  - git add --all .
+  - git commit -m "Travis CI Auto Builder To Heroku"
+  - git push --quiet --force https://$ghost@github.com/fydy/bbsnode.git ghost
