@@ -1,0 +1,12 @@
+{
+    "url": "https://bbsnode.herokuapp.com/",
+    "secret": "bf932240-ea23-46a5-8932-604db4e93a14",
+    "database": "mongo",
+    "port": 4567,
+    "mongo": {
+        "host": "8sdc65nfhhd4o9j577ri6r0tkk@ds117719.mlab.com",
+        "port": 17719,
+        "database": "heroku_43cl7ppf",
+        "uri": "mongodb://heroku_43cl7ppf:8sdc65nfhhd4o9j577ri6r0tkk@ds117719.mlab.com:17719/heroku_43cl7ppf"
+    }
+}
