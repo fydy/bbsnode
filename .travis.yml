@@ -13,6 +13,7 @@ before_install:
   - cp -rf config.json NodeBB && cd NodeBB
   - npm install nconf
   - npm install winston
+  - npm install mkdirp
   
 script: 
   - echo "npm test temporarily disabled"
