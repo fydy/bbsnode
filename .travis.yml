@@ -12,7 +12,7 @@ before_install:
   - git config --global user.name "fydy"
   - git config --global user.email "barberw@mail.lcc.edu"
   - git clone -b v1.10.x https://github.com/NodeBB/NodeBB.git
-  - cp -rf config.json NodeBB && cd NodeBB
+  - cp -rf NodeBB/* ./
   - npm install nconf
   - npm install winston
   - npm install mkdirp
