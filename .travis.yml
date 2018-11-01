@@ -12,9 +12,5 @@ cache:
 before_script:
   # this install.sh script requires sudo
   - wget -qO- https://toolbelt.heroku.com/install.sh | sh
-  - heroku config:set HEROKU_ACCESS_TOKEN=$KEY
-  - heroku config:set HEROKU_APPS=$APP
+  - heroku login -u $USERNAME -p $PASSWORD
 
-script:
-
-  - heroku git:clone -a $APP
