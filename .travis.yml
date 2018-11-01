@@ -27,7 +27,6 @@ script:
   
 install:
   - node app --setup
-  - echo "web: node loader.js --no-daemon" > Procfile
   
 after_success:
   - git add --all .
