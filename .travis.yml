@@ -3,17 +3,18 @@ language: node_js
 node_js:
   - "10"
 
-sudo: false
+sudo: required
 
 cache:
   directories:
     - node_modules
+    
+before_script:
+  # this install.sh script requires sudo
+  - wget -qO- https://toolbelt.heroku.com/install.sh | sh
 
-before_install:
-  - curl -n https://api.heroku.com/apps/bbsnode/config-vars \
-    -H "Accept: application/vnd.heroku+json; version=3" \
-    -H "Authorization: $YOUR_TOKEN
-  - heroku git:clone -a bbsnode
-
+script:
+  - /usr/local/heroku/bin/heroku git:clone --app bbsnode # requires HEROKU_API_KEY env variable
+  
 install:
 - node app --setup
