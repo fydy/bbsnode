@@ -12,7 +12,7 @@ before_install:
   - git clone -b v1.10.x https://github.com/NodeBB/NodeBB.git
   - cp -rf config.json NodeBB && cd NodeBB
   - npm install nconf
-  - npm install --production
+  - npm install winston
   
 script: 
   - echo "npm test temporarily disabled"
