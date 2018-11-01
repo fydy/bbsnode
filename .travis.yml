@@ -12,5 +12,5 @@ cache:
 before_script:
   # this install.sh script requires sudo
   - wget -qO- https://toolbelt.heroku.com/install.sh | sh
-  - heroku login -u $USERNAME -p $PASSWORD
+  - hheroku config:set $(heroku auth:token)
 
