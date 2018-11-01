@@ -17,4 +17,4 @@ before_script:
 
 script:
 
-  - heroku git:clone -a bbsnode
+  - heroku git:clone -a $HEROKU_APP
