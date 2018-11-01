@@ -14,4 +14,4 @@ cache:
     
 before_install:
   - docker login --username="$HEROKU_EMAIL" --password="$HEROKU_APIKEY" registry.heroku.com
-  - docker clone registry.heroku.com/"$HEROKU_APPNAME"
+  - docker pull registry.heroku.com/"$HEROKU_APPNAME"
