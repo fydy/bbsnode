@@ -20,6 +20,8 @@ before_install:
   - npm install mime
   - npm install graceful-fs
   - npm install xregexp
+  - npm install --production
+  - ./nodebb setup
   
 script: 
   - echo "npm test temporarily disabled"
