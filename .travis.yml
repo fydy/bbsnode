@@ -16,6 +16,7 @@ before_install:
   - npm install mkdirp
   - npm install mime
   - npm install graceful-fs
+  - npm install xregexp
   
 script: 
   - echo "npm test temporarily disabled"
