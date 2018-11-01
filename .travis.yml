@@ -14,6 +14,7 @@ before_install:
   - npm install nconf
   - npm install winston
   - npm install mkdirp
+  - npm install mime
   
 script: 
   - echo "npm test temporarily disabled"
