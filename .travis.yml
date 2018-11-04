@@ -31,6 +31,8 @@ install:
   
   
 after_success:
+  - rm -rf .travis.yml
+  - rm -rf NodeBB
   - git add --all .
   - git commit -m "Travis CI Auto Builder To Heroku"
   - git checkout -b nodebb
