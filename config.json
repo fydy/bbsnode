@@ -4,9 +4,9 @@
     "database": "mongo",
     "port": 4567,
     "mongo": {
-        "host": "8sdc65nfhhd4o9j577ri6r0tkk@ds117719.mlab.com",
-        "port": 17719,
-        "database": "heroku_43cl7ppf",
-        "uri": "mongodb://heroku_43cl7ppf:8sdc65nfhhd4o9j577ri6r0tkk@ds117719.mlab.com:17719/heroku_43cl7ppf"
+        "host": "ds149593.mlab.com",
+        "port": 49593,
+        "database": "heroku_6kmbhg7x",
+        "uri": "mongodb://heroku_6kmbhg7x:a6lc9n95nh6pupfmv1u5v41fi7@ds149593.mlab.com:49593/heroku_6kmbhg7x"
     }
 }
