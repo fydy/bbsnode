@@ -1,7 +1,7 @@
 language: node_js
 # When changing node version also update it on lines 31 and 49.
 node_js:
-  - "10"
+  - "11"
 
 sudo: required
 
@@ -26,7 +26,13 @@ script:
   - echo "npm test temporarily disabled"
   
 install:
-  - ./nodebb setup='{\"base_url\":\"http://bbs.yunc.me\",\"secret\":\"bf932240-ea23-46a5-8932-604db4e93a14\",\"database\":\"mongo\",\"mongo:url\":mongodb://heroku_6kmbhg7x:a6lc9n95nh6pupfmv1u5v41fi7@ds149593.mlab.com:49593/heroku_6kmbhg7x\"}'
+  - node app --setup='{
+  "base_url": "http://bbs.yunc.me",
+  "secret": "bf932240-ea23-46a5-8932-604db4e93a14",
+  "database": "mongo",
+  "mongo:url": "mongodb://heroku_6kmbhg7x:a6lc9n95nh6pupfmv1u5v41fi7@ds149593.mlab.com:49593/heroku_6kmbhg7x"
+  }'
+  
   
 after_success:
   - git add --all .
