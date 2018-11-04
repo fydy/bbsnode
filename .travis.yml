@@ -28,6 +28,7 @@ script:
   - echo "npm test temporarily disabled"
   
 install:
+  - ./nodebb setup
   - node app --setup
   
   
