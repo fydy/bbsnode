@@ -14,6 +14,7 @@ before_install:
   - git clone -b v1.10.x https://github.com/NodeBB/NodeBB.git
   - rm -rf NodeBB/.travis.yml
   - cp -rf config.json NodeBB
+  - cp -rf Procfile NodeBB
   - cd NodeBB
   - npm install nconf
   - npm install winston
