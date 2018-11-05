@@ -1,7 +1,7 @@
 language: node_js
 # When changing node version also update it on lines 31 and 49.
 node_js:
-  - "8"
+  - "11"
 
 sudo: required
 
@@ -21,7 +21,7 @@ before_install:
   - npm install graceful-fs
   - npm install xregexp
   - npm install --production
-  - node app --setup
+  - ./nodebb setup
   
 script: 
   - echo "npm test temporarily disabled"
