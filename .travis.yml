@@ -28,7 +28,7 @@ script:
   - echo "npm test temporarily disabled"
   
 install:
-  - node app --setup=\"{\\\"url\\\":\\\"http://bbs.yunc.me\\\",\\\"secret\\\":\\\"abcdef\\\",\\\"database\\\":\\\"mongo\\\",\\\"mongo:host\\\":\\\"ds151753.mlab.com\\\",\\\"mongo:port\\\":51753,\\\"mongo:username\\\":heroku_jc54t7c1,\\\"mongo:password\\\":u34c18s5sml6v3t66ka86qp3lt,\\\"mongo:database\\\":heroku_jc54t7c1,\\\"admin:username\\\":\\\"eryue\\\",\\\"admin:email\\\":\\\"chunxiaqiu13@gmail.com\\\",\\\"admin:password\\\":\\\"abcdef\\\",\\\"admin:password:confirm\\\":\\\"abcdef\\\"}\" --ci=\"{\\\"host\\\":\\\"ds151753.mlab.com\\\",\\\"port\\\":51753,\\\"database\\\":heroku_jc54t7c1}\"; fi"
+  - node app --setup=\"{\\\"url\\\":\\\"http://bbs.yunc.me\\\",\\\"secret\\\":\\\"abcdef\\\",\\\"database\\\":\\\"mongo\\\",\\\"mongo:host\\\":\\\"ds151753.mlab.com\\\",\\\"mongo:port\\\":51753,\\\"mongo:username\\\":heroku_jc54t7c1,\\\"mongo:password\\\":u34c18s5sml6v3t66ka86qp3lt,\\\"mongo:database\\\":heroku_jc54t7c1,\\\"admin:username\\\":\\\"eryue\\\",\\\"admin:email\\\":\\\"chunxiaqiu13@gmail.com\\\",\\\"admin:password\\\":\\\"abcdef\\\",\\\"admin:password:confirm\\\":\\\"abcdef\\\"}\" --ci=\"{\\\"host\\\":\\\"ds151753.mlab.com\\\",\\\"port\\\":51753,\\\"database\\\":heroku_jc54t7c1}\";
   
 after_success:
   - rm -rf .travis.yml
