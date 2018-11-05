@@ -21,6 +21,7 @@ before_install:
   - npm install graceful-fs
   - npm install xregexp
   - npm install --production
+  - ./nodebb build
   - ./nodebb setup
   
 script: 
