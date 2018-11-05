@@ -1,1 +1,1 @@
-web: ./nodebb setup && ./nodebb start
+web: node loader.js --no-silent --no-daemon
