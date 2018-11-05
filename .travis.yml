@@ -17,11 +17,15 @@ before_install:
   - npm install mime
   - npm install graceful-fs
   - npm install xregexp
+  - npm install nodebb-theme-v2mm
   - npm install --production
   - ./nodebb setup
   
 script: 
   - echo "npm test temporarily disabled"
+
+install:
+  - ./nodebb reset -t nodebb-theme-v2mm
   
 after_success:
   - rm -rf .travis.yml
