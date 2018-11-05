@@ -5,9 +5,6 @@ node_js:
 
 sudo: required
 
-services:
-  - mongodb
-
 directories:
     - node_modules
     
@@ -16,7 +13,6 @@ before_install:
   - git config --global user.email "barberw@mail.lcc.edu"
   - git clone -b v1.10.x https://github.com/NodeBB/NodeBB.git
   - rm -rf NodeBB/.travis.yml
-  - rm -rf config.json
   - mv NodeBB/* ./
   - cp install/package.json package.json
   - npm install nconf
