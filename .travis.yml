@@ -15,6 +15,7 @@ before_install:
   - rm -rf NodeBB/.travis.yml
   - rm -rf node_modules
   - mv NodeBB/* ./
+  - cp install/package.json package.json
   - npm install nconf
   - npm install winston
   - npm install mkdirp
@@ -23,7 +24,7 @@ before_install:
   - npm install xregexp
   - npm install nodebb-theme-v2mm
   - npm install --production
-  - ./nodebb setup
+  - ./node app --setup
   
 script: 
   - echo "npm test temporarily disabled"
