@@ -7,10 +7,10 @@ sudo: true
 before_install:
   - git config --global user.name "fydy"
   - git config --global user.email "barberw@mail.lcc.edu"
+  - mkdir -p ./core/server/adapters/storage/
   - npm install
   - npm install ghost-cloudinary-storage
   - npm install ghost-cloudinary-store
-  - mkdir -p ./core/server/adapters/storage/
   - cp -r node_modules/cloudinary-store ./core/server/adapters/storage
   - cp -r node_modules/cloudinary-store ./content/adapters/storage/
   - cp -r node_modules/ghost-cloudinary-storage ./content/adapters/storage/
