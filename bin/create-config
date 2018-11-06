@@ -108,3 +108,13 @@ function getMysqlConfig(connectionUrl) {
 
 var configContents = JSON.stringify(createConfig(), null, 2);
 fs.writeFileSync(path.join(appRoot, 'config.production.json'), configContents);
+
+storage: {
+        active: 'ghost-cloudinary-store',
+        'ghost-cloudinary-store': {
+            secure: true, // to use https
+            cloud_name: 'chunxiaiqu',
+            api_key: '113242432941759',
+            api_secret: '5O2DImJaLx0BPVGTZMopmvYRa3A'
+        }
+    }
