@@ -10,7 +10,7 @@ before_install:
   - npm install
   - npm install ghost-cloudinary-storage
   - npm install ghost-cloudinary-store
-  - mkdir ./core/server/adapters/storage/
+  - mkdir versions/$GHOST_VERSION/core/server/adapters/storage/
   - cp -r node_modules/cloudinary-store ./core/server/adapters/storage
   - cp -r node_modules/cloudinary-store ./content/adapters/storage/
   - cp -r node_modules/ghost-cloudinary-storage ./content/adapters/storage/
