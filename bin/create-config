@@ -34,7 +34,16 @@ function createConfig() {
             api_secret: '5O2DImJaLx0BPVGTZMopmvYRa3A'
         }
     }
-
+   } else if (!!process.env.BUCKETEER_AWS_ACCESS_KEY_ID) {
+    fileStorage = true
+    storage = {
+        "active": "cloudinary-store",
+        "cloudinary-store": {
+        "cloud_name": "chunxiaiqu",
+        "api_key": "113242432941759",
+        "api_secret": "5O2DImJaLx0BPVGTZMopmvYRa3A"
+    }
+}  
   } else {
     fileStorage = false
     storage = {}
