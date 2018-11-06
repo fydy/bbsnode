@@ -26,15 +26,15 @@ function createConfig() {
   } else if (!!process.env.BUCKETEER_AWS_ACCESS_KEY_ID) {
     fileStorage = true
     storage = {
-      active: 's3',
-      's3': {
-        accessKeyId:     process.env.BUCKETEER_AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.BUCKETEER_AWS_SECRET_ACCESS_KEY,
-        bucket:          process.env.BUCKETEER_BUCKET_NAME,
-        region:          process.env.S3_BUCKET_REGION,
-        assetHost:       process.env.S3_ASSET_HOST_URL
-      }
+      active: 'ghost-cloudinary-store',
+        'ghost-cloudinary-store': {
+            secure: true, // to use https
+            cloud_name: 'chunxiaiqu',
+            api_key: '113242432941759',
+            api_secret: '5O2DImJaLx0BPVGTZMopmvYRa3A'
+        }
     }
+
   } else {
     fileStorage = false
     storage = {}
@@ -108,13 +108,3 @@ function getMysqlConfig(connectionUrl) {
 
 var configContents = JSON.stringify(createConfig(), null, 2);
 fs.writeFileSync(path.join(appRoot, 'config.production.json'), configContents);
-
-storage: {
-        active: 'ghost-cloudinary-store',
-        'ghost-cloudinary-store': {
-            secure: true, // to use https
-            cloud_name: 'chunxiaiqu',
-            api_key: '113242432941759',
-            api_secret: '5O2DImJaLx0BPVGTZMopmvYRa3A'
-        }
-    }
