@@ -8,6 +8,8 @@ before_install:
   - git config --global user.name "fydy"
   - git config --global user.email "barberw@mail.lcc.edu"
   - npm install
+  - npm install ghost-cloudinary-storage
+  - cp -r node_modules/ghost-cloudinary-storage content/adapters/storage/ghost-cloudinary-storage
 
 install:
   - npm update
