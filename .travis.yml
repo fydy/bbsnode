@@ -14,6 +14,7 @@ before_install:
   - cp -r node_modules/ghost-cloudinary-store ./core/server/adapters/storage
   - cp -r node_modules/ghost-cloudinary-store ./content/adapters/storage/
   - cp -r node_modules/ghost-cloudinary-storage ./content/adapters/storage/
+  - ls
 
 install:
   - npm update
