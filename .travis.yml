@@ -14,6 +14,7 @@ script:
   - island -b
 
 after_success:
+  - rm -rf .gitignore
   - git add --all .
   - git commit -m "update"
   - git checkout -b cli
