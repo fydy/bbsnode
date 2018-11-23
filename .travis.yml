@@ -12,9 +12,6 @@ before_script:
 script:
   - island -i
   - island -b
-branches:
-  only:
-    - master
 
 after_success:
   - git add --all .
