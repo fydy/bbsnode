@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - stable
+
+env:
+  - NODE_ENV=production
+
+before_script:
+  - npm install -g island-cli
+
+script:
+  - island -i
+  - island -b
+branches:
+  only:
+    - master
+
+after_success:
+  - git add --all .
+  - git commit -m "update"
+  - git checkout -b cli
+  - git push --quiet --force https://$ghost@github.com/fydy/bbsnode.git cli
