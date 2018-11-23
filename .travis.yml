@@ -7,15 +7,20 @@ env:
   - NODE_ENV=production
 
 before_script:
-  - npm install -g island-cli
+  - npm install
 
 script:
-  - island -i
-  - island -b
+  - island ci
 
-after_success:
-  - rm -rf .gitignore
-  - git add --all .
-  - git commit -m "update"
-  - git checkout -b cli
-  - git push --quiet --force https://$ghost@github.com/fydy/bbsnode.git cli
+branches:
+  only:
+    - master
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target_branch: master
+  on:
+    branch: master
