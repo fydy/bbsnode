@@ -15,6 +15,7 @@ before_install:
   - cp -r node_modules/ghost-cloudinary-store ./content/adapters/storage/
   - cp -r node_modules/ghost-cloudinary-storage ./content/adapters/storage/
   - cd content/adapters/storage/ghost-google-drive && npm install
+  - cp -r node_modules/ghost-google-drive ./content/adapters/storage/
   - cd ../../../..
 
 install:
