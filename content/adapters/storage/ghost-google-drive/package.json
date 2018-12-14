@@ -1,0 +1,28 @@
+{
+  "name": "ghost-google-drive",
+  "version": "1.0.0",
+  "description": "Google drive store for Ghost blog.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robincsamuel/ghost-google-drive.git"
+  },
+  "keywords": [
+    "Ghost",
+    "google drive",
+    "ghost-store"
+  ],
+  "author": "Robin C Samuel <hi@robinz.in> (http://robinz.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robincsamuel/ghost-google-drive"
+  },
+  "homepage": "https://github.com/robincsamuel/ghost-google-drive",
+  "dependencies": {
+    "bluebird": "2.9.34",
+    "googleapis": "2.1.3"
+  }
+}
