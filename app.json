@@ -35,6 +35,22 @@
     "S3_ASSET_HOST_URL": {
       "description": "Optional custom CDN asset host url, if using S3 file storage.",
       "required": false
+    },
+    "YOUR_PRIVATE_KEY_ID": {
+      "description": "Optional custom CDN asset host url, if using S3 file storage.",
+      "required": true
+    },
+    "YOUR_PRIVATE_KEY": {
+      "description": "Optional custom CDN asset host url, if using S3 file storage.",
+      "required": true
+    },
+    "YOUR_CLIENT_EMAIL": {
+      "description": "Optional custom CDN asset host url, if using S3 file storage.",
+      "required": true
+    },
+    "YOUR_CLIENT_ID": {
+      "description": "Optional custom CDN asset host url, if using S3 file storage.",
+      "required": true
     }
   }
 }

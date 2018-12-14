@@ -23,27 +23,16 @@ function createConfig() {
         assetHost:       process.env.S3_ASSET_HOST_URL
       }
     }
-  } else if (!!process.env.BUCKETEER_AWS_ACCESS_KEY_ID) {
-    fileStorage = true
-    storage = {
-      active: 'ghost-cloudinary-store',
-        'ghost-cloudinary-store': {
-            secure: true, // to use https
-            cloud_name: 'chunxiaiqu',
-            api_key: '113242432941759',
-            api_secret: '5O2DImJaLx0BPVGTZMopmvYRa3A'
-        }
-    }
   } else if {
     fileStorage = true
     storage = {
       active: 'ghost-google-drive',
         'ghost-google-drive': {
            key: {
-            "private_key_id": "c65290ffaa759485820e167a2f364ae7736d5bff",
-            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC+vosyN3Z27tqM\nHQDjFw9f3OOlZL+iHyFTfbhGcaitefBn6IIGJjCgqXdySQ6kKeBCwXPVNUPSPRHw\nWkzSU42+e77p30rA1gf8Jjz5e9GUdcLLPcV/dGSYVtcBi/n2a+dlcuAXR6Y+mGKq\n32kcgbqWVZIjdn5pblEM5QS0NNggl5QJdftWTWun5VHNcicGwhK1kToiaRcGfURI\nCFKKjlmFiwW/eWCR3gcuWj4stMnk4o6GIsDmVLpoRqBfyMkmiWqYzvzFkdu085EZ\nxIZgYP/0lbEdFlkDT5/YZ2TjhGQW4SMxEs6/vXtKdMvOfI+7+9qmsrUoXokWPwmY\nT0YNtXgrAgMBAAECggEAEeRmwzWfp6VdG8KGuEaL+yaJthR+w1LfOekzlWwI8gjb\nq6uMMs53RkLPQQmoVW7WKfzihC/kZj6zRZP628nZpHIQJPj8lp0dD6J4msBqFt57\nALyRH5UH8KBIt8ztDBfwEzyU16oxZnK94qBlSDbFDWAGfswZLIOcF7UN3WeNlHTp\n/AtI7OJk500rhi8TpR7maZXXJ/paeEYBfdkbBECvRIjN/400ph9bC9gfXftb6X70\nn+MsI+tKCABSK5UIzY9kQk0DckPn5FQAX0asvdxkZc5lUOlUVVYnqi0uZciQszh/\nVy2gFoNggPpMloCxlxpNBPpkvCkrwN401uNzXBKsaQKBgQDobT64M0KsivihXR7U\nlluXfoLhd3NKYgvv0mCl6Cb+Vy54XGHcqEzCQIwJJv2FDwTs1iRjuAZyVLUz+EFz\nCfL7RvJ+c5scNm6cpIjAN5qYgWFruGI+vwHgXOw4wqsCyJnB1uRLWeGPFW5iEaMg\nNLb5SsDAP9LUEifaqpqu1g9C2QKBgQDSFw0kRbzyDhNnUeFaN9OVngdMdAMLRJ+Q\nOSogYwkeCkZgRd7vW7s9AilwIVDU57xv6O2PVgPoyQiJNFydkSixQNwRFEFS8TAJ\nXzkmWl2+nwq/ekoRyRqBm6LK5L01lvACxhnOPsyo6w33748JYwCqAQrPAtOLdGc7\ntX8HDGwoowKBgFqc7IzHf0DhVRkjwrdCfybKrZ/U/9+J5flzXTaREVKrDnTiH0z1\nWCeLHo0a5E+RkWv7+GfgALNmDtbZ/DorMM2B1VwzGc+f8POkuaOmieDW3/ItCjBI\nKyUbVQSz8BO/vSHy80HlIqizxDr7gUs3AfaijA7nUvxWr67yQCfVUFHRAoGAO1i5\npKJykmn5fzk5EHQut9gRNb6b0YYMEQCk7ssrGypJ4Q47wJ/ID57Zt8whelMP/wjs\neo4QwqRvXdrFwtjrhs7Mm6J+JYDuUedtTHFAhAWHUrmnzMhjTXN6lBfzfvzpRc9S\nINnKlHj51Cz+2eb2nA95Tyr8OSujsdE+Ve5ja0MCgYA1zVQTCXIqlr9xfDBL4+ro\ncBLXyviJqdXsMKLXD1WXorCYMGsZxjzSn+ebuEWjLHq9N6K2lyf6y9DgP18G7Pxb\njfC3TVmqp8eoQXlOOLwkBJS2/T/fEwH/c0AJqRR/f7zSnqHyDqC9RR1jU7w6AfAC\nqR+s6IXPwGVFzc/6Bdw8cQ==\n-----END PRIVATE KEY-----\n",
-            "client_email": "yunc-643@yunc-225503.iam.gserviceaccount.com",
-            "client_id": "110596937822563636444",
+            "private_key_id": "YOUR_PRIVATE_KEY_ID",
+            "private_key": "YOUR_PRIVATE_KEY",
+            "client_email": "YOUR_CLIENT_EMAIL",
+            "client_id": "YOUR_CLIENT_ID",
           }
         }
 	   }
