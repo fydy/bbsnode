@@ -19,6 +19,8 @@ before_install:
 - echo "   CheckHostIP no" >> ~/.ssh/config;
 - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config;
 before_script:
+- echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - ssh -v git@heroku.com
 - heroku git:clone -a bbsnnode
 - rm -rf NodeBB/.travis.yml
