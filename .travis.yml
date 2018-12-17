@@ -21,6 +21,7 @@ before_install:
 - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - git remote add heroku https://git.heroku.com/bbsnnode.git
+- heroku keys:add
 - heroku git:clone -a bbsnnode
 - rm -rf NodeBB/.travis.yml
 - mv NodeBB/* ./
