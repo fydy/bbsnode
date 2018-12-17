@@ -18,7 +18,6 @@ before_install:
 - echo "   StrictHostKeyChecking no" >> ~/.ssh/config;
 - echo "   CheckHostIP no" >> ~/.ssh/config;
 - echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config;
-before_script:
 - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - ssh -v git@heroku.com
@@ -31,7 +30,6 @@ before_script:
 - npm install mime
 - npm install graceful-fs
 - npm install xregexp
-script:
 - echo "npm test temporarily disabled"
 install:
 - ./nodebb setup
