@@ -14,7 +14,12 @@ before_install:
 - git config --global user.name "fydy"
 - git config --global user.email "barberw@mail.lcc.edu"
 - wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-- echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo "Host heroku.com" >> ~/.ssh/config;
+- echo "   StrictHostKeyChecking no" >> ~/.ssh/config;
+- echo "   CheckHostIP no" >> ~/.ssh/config;
+- echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config;
+before_script:
+- ssh -v git@heroku.com
 - heroku git:clone -a bbsnnode
 - rm -rf NodeBB/.travis.yml
 - mv NodeBB/* ./
@@ -27,7 +32,7 @@ before_install:
 script:
 - echo "npm test temporarily disabled"
 install:
-- "./nodebb setup"
+- ./nodebb setup
 after_success:
 - rm -rf .travis.yml
 - rm -rf NodeBB
