@@ -15,7 +15,6 @@ before_install:
 - git config --global user.email "barberw@mail.lcc.edu"
 - wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- ssh -v git@heroku.com
 - heroku git:clone -a bbsnnode
 - rm -rf NodeBB/.travis.yml
 - mv NodeBB/* ./
