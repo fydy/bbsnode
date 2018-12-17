@@ -1,0 +1,12 @@
+{
+    "url": "http://bbs.yunc.me",
+    "secret": "bf932240-ea23-46a5-8932-604db4e93a14",
+    "database": "mongo",
+    "port": 4567,
+    "mongo": {
+        "host": "ds133113.mlab.com",
+        "port": 33113,
+        "database": "yuncme",
+        "uri": "mongodb://yuncmeuser:Ucgwls3VoomQxqxgoXcX@ds133113.mlab.com:33113/yuncme"
+    }
+}

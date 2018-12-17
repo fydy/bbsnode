@@ -1,0 +1,36 @@
+language: node_js
+node_js:
+- '11'
+sudo: required
+directories:
+- node_modules
+before_install:
+- openssl aes-256-cbc -K $encrypted_cde7a2053db7_key -iv $encrypted_cde7a2053db7_iv
+  -in id_rsa.enc -out id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp .travis/ssh_config ~/.ssh/config
+- git config --global user.name "fydy"
+- git config --global user.email "barberw@mail.lcc.edu"
+- sudo snap install heroku --classic
+- heroku git:clone -b bbsnnode
+- rm -rf NodeBB/.travis.yml
+- mv NodeBB/* ./
+- npm install nconf
+- npm install winston
+- npm install mkdirp
+- npm install mime
+- npm install graceful-fs
+- npm install xregexp
+script:
+- echo "npm test temporarily disabled"
+install:
+- "./nodebb setup"
+after_success:
+- rm -rf .travis.yml
+- rm -rf NodeBB
+- git add -f Procfile config.json package.json build && git commit -am "adding Procfile
+  and configs for Heroku"
+- git checkout -b nodebb
+- git push --quiet --force https://$ghost@github.com/fydy/bbsnode.git nodebb
