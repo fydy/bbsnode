@@ -2,12 +2,12 @@
 
   {{> post-card }}
 
- <footer class="post-meta">
-        {{#if}} alt="{{author.name}}" nopin="nopin" />{{/if}}
+  <footer class="post-meta">
+        {{#if authors.[#].profile_image}}<img class="author-thumb" src="{{authors.[#].profile_image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
         {{author}}
         {{tags prefix=" on "}}
         <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
         (<a href="{{url}}#disqus_thread">Comments</a>)
     </footer>
-
+    
 {{/foreach}}
