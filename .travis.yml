@@ -16,4 +16,5 @@ script:
   
 after_success:
   - git add -f Procfile config.json package.json build && git commit -am "adding Procfile and configs for Heroku"
-  - git push --quiet --force https://$ghost@github.com/fydy/bbsnode.git node
+  - git checkout -b nodebb
+  - git push --quiet --force https://$ghost@github.com/fydy/bbsnode.git nodebb
