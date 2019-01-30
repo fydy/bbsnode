@@ -10,7 +10,7 @@ before_install:
 
 install:
   - npm install nodebb-theme-timuu
-  - npm i nodebb-theme-oxide
+  - npm install nodebb-theme-oxide@latest
   - ./nodebb reset -t nodebb-theme-oxide
   
 script: 
