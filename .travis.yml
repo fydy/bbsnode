@@ -10,7 +10,8 @@ before_install:
 
 install:
   - npm install nodebb-theme-timuu
-  - ./nodebb reset -t nodebb-theme-timuu
+  - npm i nodebb-theme-oxide
+  - ./nodebb reset -t nodebb-theme-oxide
   
 script: 
   - echo "npm test temporarily disabled"
