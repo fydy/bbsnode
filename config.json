@@ -1,5 +1,5 @@
 {
-    "url": "http://bbs.yunc.me",
+    "url": "http://bbs.wusong.me",
     "secret": "bf932240-ea23-46a5-8932-604db4e93a14",
     "database": "mongo",
     "port": 4567,
