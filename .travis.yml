@@ -9,7 +9,8 @@ before_install:
   - git config --global user.email "barberw@mail.lcc.edu"
 
 install:
-  - ./nodebb setup
+  - npm install nodebb-theme-timuu
+  - ./nodebb reset -t nodebb-theme-timuu
   
 script: 
   - echo "npm test temporarily disabled"
