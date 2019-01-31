@@ -1,0 +1,2 @@
+define("ace/snippets/toml",["require","exports","module"],function(e,o,t){"use strict";o.snippetText=undefined,o.scope="toml"});(function(){window.require(["ace/snippets/toml"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=toml.js.map

@@ -1,0 +1,2 @@
+define("ace/snippets/asciidoc",["require","exports","module"],function(e,i,o){"use strict";i.snippetText=undefined,i.scope="asciidoc"});(function(){window.require(["ace/snippets/asciidoc"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=asciidoc.js.map

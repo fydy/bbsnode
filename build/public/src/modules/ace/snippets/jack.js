@@ -1,0 +1,2 @@
+define("ace/snippets/jack",["require","exports","module"],function(e,o,t){"use strict";o.snippetText=undefined,o.scope="jack"});(function(){window.require(["ace/snippets/jack"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=jack.js.map

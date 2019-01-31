@@ -1,0 +1,2 @@
+define("ace/snippets/ada",["require","exports","module"],function(e,o,t){"use strict";o.snippetText=undefined,o.scope="ada"});(function(){window.require(["ace/snippets/ada"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=ada.js.map

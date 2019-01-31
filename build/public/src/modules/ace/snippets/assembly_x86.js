@@ -1,0 +1,2 @@
+define("ace/snippets/assembly_x86",["require","exports","module"],function(e,s,o){"use strict";s.snippetText=undefined,s.scope="assembly_x86"});(function(){window.require(["ace/snippets/assembly_x86"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=assembly_x86.js.map

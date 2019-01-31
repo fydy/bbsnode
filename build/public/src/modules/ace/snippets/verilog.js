@@ -1,0 +1,2 @@
+define("ace/snippets/verilog",["require","exports","module"],function(e,o,i){"use strict";o.snippetText=undefined,o.scope="verilog"});(function(){window.require(["ace/snippets/verilog"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=verilog.js.map

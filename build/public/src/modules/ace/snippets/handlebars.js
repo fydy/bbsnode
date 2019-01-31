@@ -1,0 +1,2 @@
+define("ace/snippets/handlebars",["require","exports","module"],function(e,n,o){"use strict";n.snippetText=undefined,n.scope="handlebars"});(function(){window.require(["ace/snippets/handlebars"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=handlebars.js.map

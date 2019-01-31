@@ -1,0 +1,2 @@
+define("ace/snippets/praat",["require","exports","module"],function(e,t,o){"use strict";t.snippetText=undefined,t.scope="praat"});(function(){window.require(["ace/snippets/praat"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=praat.js.map

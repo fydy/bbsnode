@@ -1,0 +1,2 @@
+define("ace/snippets/html_elixir",["require","exports","module"],function(e,i,t){"use strict";i.snippetText=undefined,i.scope="html_elixir"});(function(){window.require(["ace/snippets/html_elixir"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=html_elixir.js.map

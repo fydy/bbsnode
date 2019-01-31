@@ -1,0 +1,2 @@
+define("ace/snippets/eiffel",["require","exports","module"],function(e,i,o){"use strict";i.snippetText=undefined,i.scope="eiffel"});(function(){window.require(["ace/snippets/eiffel"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=eiffel.js.map

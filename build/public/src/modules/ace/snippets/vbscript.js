@@ -1,0 +1,2 @@
+define("ace/snippets/vbscript",["require","exports","module"],function(e,t,i){"use strict";t.snippetText=undefined,t.scope="vbscript"});(function(){window.require(["ace/snippets/vbscript"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=vbscript.js.map

@@ -1,0 +1,2 @@
+define("ace/snippets/pig",["require","exports","module"],function(e,i,o){"use strict";i.snippetText=undefined,i.scope="pig"});(function(){window.require(["ace/snippets/pig"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=pig.js.map

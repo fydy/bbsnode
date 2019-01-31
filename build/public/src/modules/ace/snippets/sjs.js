@@ -1,0 +1,2 @@
+define("ace/snippets/sjs",["require","exports","module"],function(e,s,o){"use strict";s.snippetText=undefined,s.scope="sjs"});(function(){window.require(["ace/snippets/sjs"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=sjs.js.map

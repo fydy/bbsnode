@@ -1,0 +1,2 @@
+define("ace/snippets/pgsql",["require","exports","module"],function(e,o,t){"use strict";o.snippetText=undefined,o.scope="pgsql"});(function(){window.require(["ace/snippets/pgsql"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=pgsql.js.map

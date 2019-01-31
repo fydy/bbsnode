@@ -1,0 +1,2 @@
+define("ace/snippets/plain_text",["require","exports","module"],function(e,t,i){"use strict";t.snippetText=undefined,t.scope="plain_text"});(function(){window.require(["ace/snippets/plain_text"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=plain_text.js.map

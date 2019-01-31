@@ -1,0 +1,2 @@
+define("ace/snippets/rdoc",["require","exports","module"],function(e,o,t){"use strict";o.snippetText=undefined,o.scope="rdoc"});(function(){window.require(["ace/snippets/rdoc"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=rdoc.js.map

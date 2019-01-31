@@ -1,0 +1,2 @@
+define("ace/snippets/mel",["require","exports","module"],function(e,o,t){"use strict";o.snippetText=undefined,o.scope="mel"});(function(){window.require(["ace/snippets/mel"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=mel.js.map

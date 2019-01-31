@@ -1,0 +1,2 @@
+define("ace/snippets/twig",["require","exports","module"],function(e,t,i){"use strict";t.snippetText=undefined,t.scope="twig"});(function(){window.require(["ace/snippets/twig"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=twig.js.map

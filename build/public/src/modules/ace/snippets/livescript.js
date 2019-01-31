@@ -1,0 +1,2 @@
+define("ace/snippets/livescript",["require","exports","module"],function(e,i,t){"use strict";i.snippetText=undefined,i.scope="livescript"});(function(){window.require(["ace/snippets/livescript"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=livescript.js.map

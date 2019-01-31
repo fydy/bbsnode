@@ -1,0 +1,2 @@
+define("ace/snippets/redshift",["require","exports","module"],function(e,t,i){"use strict";t.snippetText=undefined,t.scope="redshift"});(function(){window.require(["ace/snippets/redshift"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=redshift.js.map

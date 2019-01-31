@@ -1,0 +1,1 @@
+!function(e){"object"==typeof module&&module.exports?module.exports=e():"function"==typeof define&&define.amd&&define(e)}(function(){return function(e,o,n,t,l){return'<label>Amount of Topics to display:</label>\r\n<input type="text" class="form-control" name="numTopics" placeholder="8" />\r\n'}});

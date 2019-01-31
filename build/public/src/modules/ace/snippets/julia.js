@@ -1,0 +1,2 @@
+define("ace/snippets/julia",["require","exports","module"],function(e,i,o){"use strict";i.snippetText=undefined,i.scope="julia"});(function(){window.require(["ace/snippets/julia"],function(e){if(typeof module=="object"&&typeof exports=="object"&&module){module.exports=e}})})();
+//# sourceMappingURL=julia.js.map
