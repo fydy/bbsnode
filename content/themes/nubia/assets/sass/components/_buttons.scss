@@ -2,15 +2,6 @@
   Components > Buttons
 \*------------------------------------*/
 
-$btn-bg: $color-white;
-$btn-bg-hover: $color-brand;
-
-$btn-color: $color-gray;
-$btn-color-hover: $color-white;
-
-$btn-border-color: $color-black;
-$btn-border-color-hover: $color-brand;
-
 .c-btn {
   display: inline-block;
   padding: $base-spacing-unit double($base-spacing-unit);
@@ -33,21 +24,20 @@ $btn-border-color-hover: $color-brand;
 
   @include attention() {
     color: $btn-color-hover;
-    border-color: $color-brand;
     text-decoration: none;
     background-color: $btn-bg-hover;
     border-color: $btn-border-color-hover;
   }
 
   &--active {
-    color: $btn-color-hover;
-    border-color: $color-brand;
+    color: $btn-active-color;
+    background-color: $btn-active-bg;
+    border-color: $btn-active-border-color;
     text-decoration: none;
-    background-color: $btn-bg-hover;
-    border-color: $btn-border-color-hover;
 
     @include attention() {
       opacity: .9;
+      border-color: $btn-active-border-color;
     }
   }
 

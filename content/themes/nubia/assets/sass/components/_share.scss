@@ -14,7 +14,7 @@
     text-align: center;
 
     &:not(:last-child) {
-      border-right: quarter($base-spacing-unit) solid $color-white;
+      border-right: quarter($base-spacing-unit) solid $bg-color;
     }
   }
 
@@ -29,27 +29,27 @@
     }
 
     &--twitter {
-      background-color: $color-twitter;
+      background-color: $bg-twitter;
     }
 
     &--facebook {
-      background-color: $color-facebook;
+      background-color: $bg-facebook;
     }
 
     &--linkedin {
-      background-color: $color-linkedin;
+      background-color: $bg-linkedin;
     }
 
     &--pinterest {
-      background-color: $color-pinterest;
-    }
-
-    &--clipboard {
-      background-color: $color-success;
+      background-color: $bg-pinterest;
     }
 
     &--email {
-      background-color: $color-text;
+      background-color: $color-black;
+    }
+
+    &--clipboard {
+      background-color: $bg-clipboard;
     }
   }
 

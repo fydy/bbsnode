@@ -33,7 +33,7 @@
       flex: 3;
       padding-right: double($base-spacing-unit);
       margin-right: double($base-spacing-unit);
-      border-right: 1px solid $color-white;
+      border-right: 1px solid $color-border;
     }
   }
 
@@ -70,6 +70,7 @@
   }
 
   &-item {
+    color: $color-gray;
     display: inline-block;
     font-size: $font-size-tiny;
     text-transform: uppercase;
@@ -78,6 +79,7 @@
   }
 
   &-icon {
+    fill: $color-gray;
     vertical-align: bottom;
     transition: $global-transition;
 

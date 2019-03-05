@@ -24,7 +24,7 @@
     }
 
     @include attention() {
-      color: $color-black;
+      color: lighten($color-gray, 10%);
       text-decoration: none;
     }
   }

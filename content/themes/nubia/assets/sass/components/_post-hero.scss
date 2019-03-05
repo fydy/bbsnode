@@ -48,7 +48,18 @@
       justify-content: end;
       height: 100%;
       border-width: 1px;
-      border-color: $color-border $color-border $color-border $color-white;
+      border-color: $color-border $color-border $color-border $bg-color;
+    }
+  }
+
+  &__content--raw {
+    border-width: 1px;
+    border-color: $color-border;
+    text-align: center;
+
+    .c-post-hero__title {
+      margin: 0 auto;
+      max-width: 60%;
     }
   }
 

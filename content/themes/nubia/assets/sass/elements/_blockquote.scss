@@ -8,4 +8,8 @@ blockquote {
   font-style: italic;
   font-family: $font-serif;
   font-size: $font-size-h4;
+
+  p {
+    margin-bottom: 0;
+  }
 }

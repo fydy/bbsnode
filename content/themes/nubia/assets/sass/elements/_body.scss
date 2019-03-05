@@ -7,7 +7,7 @@ body {
   font-size: $font-size-medium;
   font-family: $font-sans-serif;
   line-height: $line-height-base;
-  background-color: $color-white;
+  background-color: $bg-color;
   border: quarter($base-spacing-unit) solid $bg-gray;
 
   @include mq($from: tablet) {
@@ -16,9 +16,4 @@ body {
 
   -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-}
-
-*::selection {
-  color: $color-white;
-  background-color: $color-brand;
 }

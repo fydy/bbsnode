@@ -16,4 +16,8 @@
   a {
     display: flex;
   }
+
+  &__icon {
+    fill: $color-gray;
+  }
 }

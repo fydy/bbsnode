@@ -1,6 +1,6 @@
 {
   "name": "nubia",
-  "version": "1.2.4",
+  "version": "1.2.7",
   "keywords": [
     "ghost-theme"
   ],
@@ -13,7 +13,6 @@
     "concat": "^3.0.0",
     "evil-icons": "^1.8.0",
     "fs": "0.0.2",
-    "gulp": "^3.9.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.7.0",
     "gulp-concat": "^2.6.0",
@@ -21,7 +20,6 @@
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
-    "gulp-sass": "^3.1.0",
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
@@ -30,8 +28,7 @@
     "lunr": "^0.7.0",
     "lunr-languages": "^1.0.0",
     "primer-tooltips": "^1.5.3",
-    "prismjs": "^1.6.0",
-    "run-sequence": "^2.1.0"
+    "prismjs": "^1.6.0"
   },
   "author": {
     "name": "Aspire Themes",
@@ -40,5 +37,12 @@
   },
   "config": {
     "posts_per_page": 11
+  },
+  "devDependencies": {
+    "dart-sass": "^1.14.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^3.2.1",
+    "node-sass": "^4.10.0",
+    "sass": "^1.14.3"
   }
 }

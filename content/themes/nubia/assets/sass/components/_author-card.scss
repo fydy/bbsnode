@@ -77,6 +77,7 @@
   }
 
   &-item {
+    color: $color-gray;
     font-size: $font-size-tiny;
     text-transform: uppercase;
     letter-spacing: $global-letter-spacing;
@@ -90,6 +91,7 @@
   }
 
   &-icon {
+    fill: $color-gray;
     vertical-align: middle;
     transition: $global-transition;
 

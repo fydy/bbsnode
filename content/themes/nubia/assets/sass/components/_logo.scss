@@ -24,9 +24,9 @@
       font-size: double($font-size-base);
     }
 
-    @include attention() {
-      color: $color-black;
-    }
+    // @include attention() {
+    //   color: $color-black;
+    // }
   }
 
   &__img {
@@ -34,11 +34,11 @@
 
     @include mq($from: tablet) {
       margin: 0 auto;
-      max-height: quadruple($base-spacing-unit) + double($base-spacing-unit);
+      max-height: quadruple($base-spacing-unit);
     }
 
     @include mq($from: desktop) {
-      max-height: double(quadruple($base-spacing-unit));
+      max-height: quadruple($base-spacing-unit) + double($base-spacing-unit);
     }
   }
 }

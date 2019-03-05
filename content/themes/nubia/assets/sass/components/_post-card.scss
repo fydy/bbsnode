@@ -13,6 +13,24 @@
     display: flex;
   }
 
+  &--raw {
+    justify-content: center;
+    background-color: $bg-gray;
+    padding: double($base-spacing-unit) + half($base-spacing-unit);
+
+    .c-post-card__content {
+      flex-grow: unset;
+    }
+
+    .c-post-card__tags {
+      margin-top: 0;
+    }
+
+    .c-post-card__share {
+      top: - quarter($base-spacing-unit);
+    }
+  }
+
   &__media {
     overflow: hidden;
     background-color: $bg-gray;
@@ -105,6 +123,22 @@
     width: 20px;
     height: 20px;
     vertical-align: top;
+  }
+
+  &__share-icon-twitter {
+    fill: $color-twitter;
+  }
+
+  &__share-icon-facebook {
+    fill: $color-facebook;
+  }
+
+  &__share-icon-linkedin {
+    fill:$color-linkedin;
+  }
+
+  &__share-icon-pinterest {
+    fill: $color-pinterest;
   }
 
   &__title-link {

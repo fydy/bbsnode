@@ -7,7 +7,6 @@
       sass         = require('gulp-sass'),
       cleanCSS     = require('gulp-clean-css'),
       autoprefixer = require('gulp-autoprefixer'),
-      runSequence  = require('run-sequence'),
       concat       = require('gulp-concat'),
       rename       = require('gulp-rename'),
       uglify       = require('gulp-uglify'),
@@ -18,6 +17,9 @@
       size         = require('gulp-size'),
       fs           = require('fs');
 
+  // Set the compiler to use Dart Sass instead of Node Sass
+  sass.compiler = require('dart-sass');
+
   var onError = function( err ) {
     console.log('An error occurred:', gutil.colors.magenta(err.message));
     gutil.beep();
@@ -25,7 +27,7 @@
   };
 
   // SASS
-  gulp.task('sass', function () {
+  gulp.task('sass', function (done) {
     return gulp.src('./assets/sass/*.scss')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sass())
@@ -33,17 +35,28 @@
     .pipe(rename({suffix: '.min'}))
     .pipe(cleanCSS())
     .pipe(gulp.dest('./assets/css'))
-    .pipe(size());
+    .pipe(size())
+    done();
   });
 
-  gulp.task('inlinecss', function() {
+  // inlineCSS
+  gulp.task('inlinecss', function(done) {
     return gulp.src(['partials/inline-css.hbs'])
-    .pipe(replace('@@compiled_css', fs.readFileSync('assets/css/app.min.css')))
-    .pipe(gulp.dest('partials/compiled'));
+    .pipe(replace('@@compiled_css', fs.readFileSync('assets/css/style.min.css')))
+    .pipe(gulp.dest('partials/compiled'))
+    done();
+  });
+
+  // inlineCSS
+  gulp.task('inlinecssdark', function(done) {
+    return gulp.src(['partials/inline-css-dark.hbs'])
+    .pipe(replace('@@compiled_css', fs.readFileSync('assets/css/dark.min.css')))
+    .pipe(gulp.dest('partials/compiled'))
+    done();
   });
 
   // JavaScript
-  gulp.task('js', function() {
+  gulp.task('js', function(done) {
     return gulp.src([
       './bower_components/jquery/dist/jquery.js',
       './bower_components/instafeed.js/instafeed.js',
@@ -74,28 +87,29 @@
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())
       .pipe(gulp.dest('./assets/js'))
-      .pipe(size());
+      .pipe(size())
+      done();
   });
 
   // Watch
   gulp.task('watch', function() {
-    gulp.watch('assets/sass/**/*.scss', ['build_css']);
-    gulp.watch(['./assets/js/app.js', './assets/js/ghosthunter.js'], ['js']);
+    gulp.watch('assets/sass/**/*.scss', gulp.series('build_css'));
+    gulp.watch(['./assets/js/app.js', './assets/js/ghosthunter.js'], gulp.series('js'));
   });
 
-  // Build CSS
-  gulp.task('build_css', [], function() {
-    runSequence('sass', 'inlinecss');
-  });
+  gulp.task(
+    'build_css',
+    gulp.series('sass', 'inlinecss', 'inlinecssdark')
+  );
 
-  // Build
-  gulp.task('build', [], function() {
-    runSequence('build_css', 'js');
-  });
+  gulp.task(
+    'build',
+    gulp.series('build_css', 'js')
+  );
 
-  // Default
-  gulp.task('default', ['watch'], function() {
-    gulp.start('build');
-  });
+  gulp.task(
+    'default',
+    gulp.series('build', 'watch')
+  );
 
 })();
