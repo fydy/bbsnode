@@ -13,8 +13,8 @@
   </div>
 
   <div class='o-grid'>
-    {{#get 'users' limit='all' include='count.posts' order='count.posts desc'}}
-      {{#foreach users}}
+    {{#get 'authors' limit='all' include='count.posts' order='count.posts desc'}}
+      {{#foreach authors}}
         {{> author-card }}
       {{/foreach}}
     {{/get}}
