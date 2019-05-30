@@ -1,0 +1,92 @@
+{
+  "_from": "ghost-cloudinary-store",
+  "_id": "ghost-cloudinary-store@3.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-jiIZ0ayzrXszRVZepduFgtZc+tS0vrtHONM+iHAZ11uQay5B3WpjOzZQ/WpnwmhykrwwWZpcm+UR0PqbL6F9sQ==",
+  "_location": "/ghost-cloudinary-store",
+  "_phantomChildren": {
+    "lodash": "4.17.11",
+    "moment": "2.24.0",
+    "q": "1.5.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ghost-cloudinary-store",
+    "name": "ghost-cloudinary-store",
+    "escapedName": "ghost-cloudinary-store",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ghost-cloudinary-store/-/ghost-cloudinary-store-3.2.1.tgz",
+  "_shasum": "5349f108cefe48e333643e67f458064c9905eca8",
+  "_spec": "ghost-cloudinary-store",
+  "_where": "/home/travis/build/fydy/bbsnode",
+  "author": {
+    "name": "Joris Berthelot",
+    "email": "admin@eexit.net"
+  },
+  "bugs": {
+    "url": "https://github.com/mmornati/ghost-cloudinary-store/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Seth Brasile",
+      "email": "seth.brasile@gmail.com"
+    },
+    {
+      "name": "Marco Mornati",
+      "email": "marco@mornati.net"
+    },
+    {
+      "name": "aphe",
+      "email": "afriyandi@cizzu.com"
+    },
+    {
+      "name": "eexit"
+    }
+  ],
+  "dependencies": {
+    "bluebird": "3.5.2",
+    "cloudinary": "~1.12.0",
+    "ghost-storage-base": "0.0.2"
+  },
+  "deprecated": false,
+  "description": "Cloudinary storage adapter for Ghost >= 1.x",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codeclimate-test-reporter": "^0.5.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.5",
+    "mocha-jshint": "^2.3.1",
+    "nock": "^10.0.0",
+    "sinon": "^6.0.0"
+  },
+  "homepage": "https://github.com/mmornati/ghost-cloudinary-store#readme",
+  "keywords": [
+    "cloudinary",
+    "ghost",
+    "blog",
+    "image",
+    "storage",
+    "module"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ghost-cloudinary-store",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmornati/ghost-cloudinary-store.git"
+  },
+  "scripts": {
+    "cover": "istanbul cover _mocha -- test",
+    "test": "mocha test/index"
+  },
+  "version": "3.2.1"
+}

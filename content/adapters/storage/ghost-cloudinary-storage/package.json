@@ -1,0 +1,50 @@
+{
+  "_from": "ghost-cloudinary-storage",
+  "_id": "ghost-cloudinary-storage@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-3mHSPzANCXniee6MSWDKLmm72hA=",
+  "_location": "/ghost-cloudinary-storage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ghost-cloudinary-storage",
+    "name": "ghost-cloudinary-storage",
+    "escapedName": "ghost-cloudinary-storage",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ghost-cloudinary-storage/-/ghost-cloudinary-storage-0.1.0.tgz",
+  "_shasum": "de61d23f300d0979e279ee8c4960ca2e69bbda10",
+  "_spec": "ghost-cloudinary-storage",
+  "_where": "/home/travis/build/fydy/bbsnode",
+  "author": {
+    "name": "jaga santagostino",
+    "email": "jagasantagostino@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kandros/ghost-cloudinary-storage/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bluebird": "^2.10.0",
+    "cloudinary": "^1.2.0",
+    "path": "^0.12.7"
+  },
+  "deprecated": false,
+  "description": "Ghost storage adapter for Cloudinary",
+  "homepage": "https://github.com/kandros/ghost-cloudinary-storage#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ghost-cloudinary-storage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kandros/ghost-cloudinary-storage.git"
+  },
+  "version": "0.1.0"
+}
